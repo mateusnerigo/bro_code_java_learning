@@ -1,9 +1,25 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("First program");
-        System.out.println("Second line");
+        // prints();
+        // variables();
+        scanners();
+    }
 
-        variables();
+    public static void scanners() {
+        Scanner scanner = new Scanner(System.in);
+        String name;
+        int age;
+
+        System.out.println("Type your name: ");
+        name = scanner.nextLine();
+
+        System.out.println("Type your age: ");
+        age = scanner.nextInt();
+
+        System.out.println("Hello " + name + "!");
+        System.out.println("You are " + age + " years old.");
     }
 
     public static void variables() {
@@ -24,6 +40,10 @@ public class Main {
         System.out.println("My (boolean) value is: " + b);
         System.out.println("My (char) value is: " + c);
         System.out.println("My (String) value is: " + d);
+    }
 
+    public static void prints() {
+        System.out.println("First program");
+        System.out.println("Second line");
     }
 }
