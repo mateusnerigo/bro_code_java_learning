@@ -1,4 +1,4 @@
-import javax.swing.*;
+import javax.swing.JOptionPane;
 import java.util.Scanner;
 
 public class Main {
@@ -6,7 +6,22 @@ public class Main {
         // prints();
         // variables();
         // scanners();
-        guiDialogs();
+        // guiDialogs();
+        javaMath();
+    }
+
+    public static void javaMath() {
+        double adjacent, opposite, hypotenuse;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Hypotenuse calculator: \n");
+        System.out.println("Type adjacent side value:");
+        adjacent = Double.parseDouble(scanner.nextLine());
+        System.out.println("Type opposite side value:");
+        opposite = Double.parseDouble(scanner.nextLine());
+
+        hypotenuse = Math.sqrt(Math.pow(adjacent, 2) * Math.pow(opposite, 2));
+        System.out.println("\nHypotenuse value: " + hypotenuse);
     }
 
     public static void guiDialogs() {
