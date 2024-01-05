@@ -1,10 +1,17 @@
+import javax.swing.*;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         // prints();
         // variables();
-        scanners();
+        // scanners();
+        guiDialogs();
+    }
+
+    public static void guiDialogs() {
+        String name = JOptionPane.showInputDialog("Enter you name");
+        JOptionPane.showMessageDialog(null, ("Hello " + name));
     }
 
     public static void scanners() {
